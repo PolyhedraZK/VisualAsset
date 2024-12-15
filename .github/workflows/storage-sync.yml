@@ -26,34 +26,34 @@ jobs:
       uses: 'google-github-actions/upload-cloud-storage@v2'
       with:
         path: './EXPchain'
-        destination: 'storage-polyhedra-prod-uswest1-visualasset'
+        destination: '${{ secrets.GCP_DESTINATION }}'
 
     - id: 'upload-Expander'
       uses: 'google-github-actions/upload-cloud-storage@v2'
       with:
         path: './Expander'
-        destination: 'storage-polyhedra-prod-uswest1-visualasset'
+        destination: '${{ secrets.GCP_DESTINATION }}'
 
     - id: 'upload-Illustration'
       uses: 'google-github-actions/upload-cloud-storage@v2'
       with:
         path: './Illustration'
-        destination: 'storage-polyhedra-prod-uswest1-visualasset'
+        destination: '${{ secrets.GCP_DESTINATION }}'
 
     - id: 'upload-Polyhedra'
       uses: 'google-github-actions/upload-cloud-storage@v2'
       with:
         path: './Polyhedra'
-        destination: 'storage-polyhedra-prod-uswest1-visualasset'
+        destination: '${{ secrets.GCP_DESTINATION }}'
 
     - id: 'upload-ProofCloud'
       uses: 'google-github-actions/upload-cloud-storage@v2'
       with:
         path: './Proof Cloud'
-        destination: 'storage-polyhedra-prod-uswest1-visualasset'
+        destination: '${{ secrets.GCP_DESTINATION }}'
 
     - id: 'upload-zkBridge'
       uses: 'google-github-actions/upload-cloud-storage@v2'
       with:
         path: './zkBridge'
-        destination: 'storage-polyhedra-prod-uswest1-visualasset'
+        destination: '${{ secrets.GCP_DESTINATION }}'
