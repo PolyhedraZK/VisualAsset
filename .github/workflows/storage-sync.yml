@@ -1,0 +1,59 @@
+name: storage-sync
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job_id:
+    runs-on: 'ubuntu-latest'
+    
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+    - id: 'checkout'
+      uses: 'actions/checkout@v4'
+
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        credentials_json: '${{ secrets.STORAGESA_GOOGLE_CREDENTIALS }}'
+
+    - id: 'upload-EXPchain'
+      uses: 'google-github-actions/upload-cloud-storage@v2'
+      with:
+        path: './EXPchain'
+        destination: '${{ secrets.GCP_DESTINATION }}'
+
+    - id: 'upload-Expander'
+      uses: 'google-github-actions/upload-cloud-storage@v2'
+      with:
+        path: './Expander'
+        destination: '${{ secrets.GCP_DESTINATION }}'
+
+    - id: 'upload-Illustration'
+      uses: 'google-github-actions/upload-cloud-storage@v2'
+      with:
+        path: './Illustration'
+        destination: '${{ secrets.GCP_DESTINATION }}'
+
+    - id: 'upload-Polyhedra'
+      uses: 'google-github-actions/upload-cloud-storage@v2'
+      with:
+        path: './Polyhedra'
+        destination: '${{ secrets.GCP_DESTINATION }}'
+
+    - id: 'upload-ProofCloud'
+      uses: 'google-github-actions/upload-cloud-storage@v2'
+      with:
+        path: './Proof Cloud'
+        destination: '${{ secrets.GCP_DESTINATION }}'
+
+    - id: 'upload-zkBridge'
+      uses: 'google-github-actions/upload-cloud-storage@v2'
+      with:
+        path: './zkBridge'
+        destination: '${{ secrets.GCP_DESTINATION }}'
