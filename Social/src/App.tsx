@@ -18,7 +18,19 @@ const trending = [
 ]
 
 function MainApp() {
-  const { user, signOut } = useAuth()
+  const { user, loading, signOut } = useAuth()
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <p className="text-xl">Loading...</p>
+      </div>
+    )
+  }
+
+  if (!user) {
+    return <LandingPage />
+  }
 
   return (
     <div className="min-h-screen bg-black text-white">
