@@ -57,3 +57,9 @@ jobs:
       with:
         path: './zkBridge'
         destination: '${{ secrets.GCP_DESTINATION }}'
+
+    - id: 'upload-Social'
+      uses: 'google-github-actions/upload-cloud-storage@v2'
+      with:
+        path: './Social'
+        destination: '${{ secrets.GCP_DESTINATION }}'
