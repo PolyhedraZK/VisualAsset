@@ -1,12 +1,16 @@
 /** @jsxImportSource react */
-import { AuthProvider, useAuth } from './contexts/AuthContext'
+import { Routes, Route } from 'react-router-dom'
+import { useAuth } from './contexts/AuthContext'
 import LandingPage from './components/LandingPage'
+import AuthCallback from './components/AuthCallback'
 import CreatePost from './components/CreatePost'
+import Post from './components/Post'
 import { Card } from "./components/ui/card"
 import { ScrollArea } from "./components/ui/scroll-area"
 import { Button } from "./components/ui/button"
 import { Separator } from "./components/ui/separator"
 import { LogOut } from "lucide-react"
+import polyhedraLogo from './assets/polyhedra-logo.png'
 
 // Trending topics
 const trending = [
@@ -39,7 +43,7 @@ function MainApp() {
         <div className="w-64 py-4">
           <div className="fixed w-64">
             <div className="mb-8">
-              <img src="/assets/polyhedra-logo.png" alt="Polyhedra Logo" className="w-48 mb-4" />
+              <img src={polyhedraLogo} alt="Polyhedra Logo" className="w-48 mb-4" />
             </div>
             <nav className="space-y-2">
               <Button variant="ghost" className="w-full justify-start">Home</Button>
@@ -63,7 +67,33 @@ function MainApp() {
         <main className="flex-1 max-w-2xl border-x border-gray-800 min-h-screen">
           <CreatePost />
           <ScrollArea className="h-[calc(100vh-200px)]">
-            {/* Posts will be rendered here */}
+            {/* Example posts - replace with real data later */}
+            <Post
+              id={1}
+              author="Alice"
+              handle="@alice_poly"
+              type="selection"
+              commitment="8a1c3c88f7e4d2b5a6e9f0c3d2b5a8e7"
+              options={[
+                { text: "ZK-SNARKs are more efficient than ZK-STARKs", odds: 2.5 },
+                { text: "ZK-STARKs are more efficient than ZK-SNARKs", odds: 1.8 },
+                { text: "They have different trade-offs", odds: 1.5 }
+              ]}
+              likes={42}
+              comments={5}
+              reposts={8}
+            />
+            <Post
+              id={2}
+              author="Bob"
+              handle="@bob_chain"
+              type="cloze"
+              content="The next big milestone for Polyhedra will be [zkBridge v2]"
+              commitment="7b2d4c99e8f5c3a6b9d0e1f4c3a6b9d0"
+              likes={28}
+              comments={3}
+              reposts={12}
+            />
           </ScrollArea>
         </main>
 
@@ -100,9 +130,10 @@ function App() {
   }
 
   return (
-    <AuthProvider>
-      {!user ? <LandingPage /> : <MainApp />}
-    </AuthProvider>
+    <Routes>
+      <Route path="/auth/callback" element={<AuthCallback />} />
+      <Route path="*" element={!user ? <LandingPage /> : <MainApp />} />
+    </Routes>
   )
 }
 

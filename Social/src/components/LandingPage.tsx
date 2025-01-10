@@ -3,15 +3,19 @@ import { Button } from "../components/ui/button"
 import { Card } from "../components/ui/card"
 import { ArrowRight, FileText } from "lucide-react"
 import { useAuth } from "../contexts/AuthContext"
+import polyhedraLogo from '../assets/polyhedra-logo.png'
 
 export default function LandingPage() {
   const { signIn } = useAuth()
 
   const handleLogin = async () => {
     try {
+      console.log('Initiating Google OAuth login...')
       await signIn()
     } catch (error) {
       console.error('Login failed:', error)
+      // Show error to user (we could add a toast notification here in the future)
+      alert('Failed to sign in. Please try again.')
     }
   }
 
@@ -21,7 +25,7 @@ export default function LandingPage() {
         <Card className="bg-gray-900 border-gray-800 p-8">
           <div className="text-center space-y-6">
             <img
-              src="/assets/polyhedra-logo.png"
+              src={polyhedraLogo}
               alt="Polyhedra Logo"
               className="h-24 mx-auto mb-8"
             />

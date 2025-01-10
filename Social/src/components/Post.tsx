@@ -6,6 +6,7 @@ import { Button } from "../components/ui/button"
 import { Input } from "../components/ui/input"
 import { Slider } from "../components/ui/slider"
 import { Heart, MessageCircle, Repeat2, Share, DollarSign } from "lucide-react"
+import polyhedraSymbol from '../assets/polyhedra-symbol.png'
 
 import { Post as PostType, ClassicalPost, SelectionPost, ClozePost } from '../types/post'
 
@@ -148,7 +149,7 @@ export default function Post(props: PostProps) {
     <Card className="p-4 mb-2 bg-gray-900 border-gray-800 hover:bg-gray-800 transition-colors">
       <div className="flex gap-3">
         <Avatar className="border-2 border-gray-700">
-          <img src="/assets/polyhedra-symbol.png" alt={author} className="w-full h-full object-cover" />
+          <img src={polyhedraSymbol} alt={author} className="w-full h-full object-cover" />
         </Avatar>
         <div className="flex-1">
           <div className="flex items-center gap-2">
