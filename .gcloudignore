@@ -2,3 +2,4 @@
 .github/
 .gcloudignore
 README.md
+gha-*.json
