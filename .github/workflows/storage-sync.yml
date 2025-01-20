@@ -22,38 +22,9 @@ jobs:
       with:
         credentials_json: '${{ secrets.STORAGESA_GOOGLE_CREDENTIALS }}'
 
-    - id: 'upload-EXPchain'
+    - id: 'upload'
       uses: 'google-github-actions/upload-cloud-storage@v2'
       with:
-        path: './EXPchain'
+        path: '.'
         destination: '${{ secrets.GCP_DESTINATION }}'
-
-    - id: 'upload-Expander'
-      uses: 'google-github-actions/upload-cloud-storage@v2'
-      with:
-        path: './Expander'
-        destination: '${{ secrets.GCP_DESTINATION }}'
-
-    - id: 'upload-Illustration'
-      uses: 'google-github-actions/upload-cloud-storage@v2'
-      with:
-        path: './Illustration'
-        destination: '${{ secrets.GCP_DESTINATION }}'
-
-    - id: 'upload-Polyhedra'
-      uses: 'google-github-actions/upload-cloud-storage@v2'
-      with:
-        path: './Polyhedra'
-        destination: '${{ secrets.GCP_DESTINATION }}'
-
-    - id: 'upload-ProofCloud'
-      uses: 'google-github-actions/upload-cloud-storage@v2'
-      with:
-        path: './Proof Cloud'
-        destination: '${{ secrets.GCP_DESTINATION }}'
-
-    - id: 'upload-zkBridge'
-      uses: 'google-github-actions/upload-cloud-storage@v2'
-      with:
-        path: './zkBridge'
-        destination: '${{ secrets.GCP_DESTINATION }}'
+        gcloudignore_path: '.gcloudignore'
