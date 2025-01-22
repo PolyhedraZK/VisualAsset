@@ -5,14 +5,20 @@ This repository stores visual assets related to various Polyhedra projects (EXPc
 Whenever changes are made to the main branch, these assets are automatically synced to Google Cloud Storage via GitHub Actions.
 
 ## Directory Structure
-- **EXPchain**: Contains EXPchain-specific logos, 3D animations, and other media assets in various formats (SVG, MP4, GIF).
-- **Expander**: Contains Expander project assets including 3D animations and vector logos.
-- **Illustration**: Contains blog images, web illustrations, and litepaper figures organized by project.
-- **Polyhedra**: Contains Polyhedra-related assets including animations and branding materials.
-- **Proof Cloud**: Contains assets for Proof Cloud media and branding, including 3D animations and vector logos.
-- **zkBridge**: Contains assets for zkBridge protocol branding and demonstrations.
-- **Deck**: Contains presentation and deck-related assets.
-- **element**: Contains UI and design element assets.
+- **Front**: Includes font packs for all Polyhedra projects.
+- **Icon**: Includes resources for all Polyhedra projects that draw icons and cannot be used directly in SVG format. (PNG).
+- **Image**: Includes all Polyhedra project image resources, mainly large-size website graphics.(PNG, JPG)
+- **Logo**: Includes all Polyhedra Logo resources for all projects. EXPchain, Expander, Polyhedra, Proof Cloud, etc. (SVG, MP4, PNG)
+- **NFT**: Includes all polyhedra releases of NFT image or video resources. (MP4)
+- **SEO**: Includes SEO mapping for all polyhedra projects. (JPG)
+- **EXPchain**: Contains EXPchain-specific logos, 3D animations, and other media assets in various formats (SVG, MP4, GIF).「Stop Updating」
+- **Expander**: Contains Expander project assets including 3D animations and vector logos.「Stop Updating」
+- **Illustration**: Contains blog images, web illustrations, and litepaper figures organized by project.「Stop Updating」
+- **Polyhedra**: Contains Polyhedra-related assets including animations and branding materials.「Stop Updating」
+- **Proof Cloud**: Contains assets for Proof Cloud media and branding, including 3D animations and vector logos.「Stop Updating」
+- **zkBridge**: Contains assets for zkBridge protocol branding and demonstrations.「Stop Updating」
+- **Deck**: Contains presentation and deck-related assets.「Stop Updating」
+- **element**: Contains UI and design element assets.「Stop Updating」
 
 ## Asset Guidelines
 ### Supported Formats
@@ -23,9 +29,9 @@ Whenever changes are made to the main branch, these assets are automatically syn
 
 ### Naming Conventions
 - Use descriptive, meaningful filenames that reflect the asset's content
-- Include format/variant suffixes where applicable (e.g., `_Black on White@2x`)
 - Maintain consistent naming across related assets
 - Use proper capitalization for project names (e.g., "EXPchain", "Proof Cloud")
+- Use of the “-” linker
 
 ## Contributing New Assets
 1. Create a new branch for your changes
