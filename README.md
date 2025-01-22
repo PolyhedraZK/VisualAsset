@@ -4,6 +4,10 @@
 This repository stores visual assets related to various Polyhedra projects (EXPchain, Expander, Polyhedra, Proof Cloud, etc.).
 Whenever changes are made to the main branch, these assets are automatically synced to Google Cloud Storage via GitHub Actions.
 
+## Resource Links：
+Prefix: https://visual-assets.polyhedra.network
+Suffix: Same path as Github
+
 ## Directory Structure
 - **Font**: Includes font packs for all Polyhedra projects.
 - **Icon**: Includes resources for all Polyhedra projects that draw icons and cannot be used directly in SVG format. (PNG).
