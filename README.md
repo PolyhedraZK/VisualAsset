@@ -11,6 +11,7 @@ Whenever changes are made to the main branch, these assets are automatically syn
 - **Logo**: Includes all Polyhedra Logo resources for all projects. EXPchain, Expander, Polyhedra, Proof Cloud, etc. (SVG, MP4, PNG)
 - **NFT**: Includes all polyhedra releases of NFT image or video resources. (MP4)
 - **SEO**: Includes SEO mapping for all polyhedra projects. (JPG)
+### Stopped Updated Directories
 - **EXPchain**: Contains EXPchain-specific logos, 3D animations, and other media assets in various formats (SVG, MP4, GIF).「Stop Updating」
 - **Expander**: Contains Expander project assets including 3D animations and vector logos.「Stop Updating」
 - **Illustration**: Contains blog images, web illustrations, and litepaper figures organized by project.「Stop Updating」
@@ -31,7 +32,6 @@ Whenever changes are made to the main branch, these assets are automatically syn
 - Use descriptive, meaningful filenames that reflect the asset's content
 - Maintain consistent naming across related assets
 - Use proper capitalization for project names (e.g., "EXPchain", "Proof Cloud")
-- Use of the “-” linker
 
 ## Contributing New Assets
 1. Create a new branch for your changes
