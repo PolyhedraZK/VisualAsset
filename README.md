@@ -5,7 +5,7 @@ This repository stores visual assets related to various Polyhedra projects (EXPc
 Whenever changes are made to the main branch, these assets are automatically synced to Google Cloud Storage via GitHub Actions.
 
 ## Directory Structure
-- **Front**: Includes font packs for all Polyhedra projects.
+- **Font**: Includes font packs for all Polyhedra projects.
 - **Icon**: Includes resources for all Polyhedra projects that draw icons and cannot be used directly in SVG format. (PNG).
 - **Image**: Includes all Polyhedra project image resources, mainly large-size website graphics.(PNG, JPG)
 - **Logo**: Includes all Polyhedra Logo resources for all projects. EXPchain, Expander, Polyhedra, Proof Cloud, etc. (SVG, MP4, PNG)
