@@ -5,14 +5,14 @@ This repository stores visual assets related to various Polyhedra projects (EXPc
 Whenever changes are made to the main branch, these assets are automatically synced to Google Cloud Storage via GitHub Actions.
 
 ## Resource Links：
-Prefix: https://visual-assets.polyhedra.network
+Prefix:  https://visual-asset.polyhedra.network 
 Suffix: Same path as Github
 
 ## Directory Structure
 - **Font**: Includes font packs for all Polyhedra projects.
-- **Icon**: Includes all icon resources for the Polyhedra project. Default icons, metal icons, base icons, etc. (PNG, SVG, JPG)
-- **Image**: Includes all Polyhedra project image resources, mainly large-size website graphics.(PNG, JPG)
-- **Logo**: Includes all Polyhedra Logo resources for all projects. EXPchain, Expander, Polyhedra, Proof Cloud, etc. (SVG, MP4, PNG)
+- **Icon**:  Includes all icon resources for the Polyhedra project. Default icons, metal icons, base icons, social media icons etc. (PNG, SVG, JPG)
+- **Image**: Includes all Image resources for the Polyhedra project. Backers, Partners, Research, Events, and more. (PNG, JPG)
+- **Logo**: Includes all Polyhedra Logo resources for all projects. EXPchain, Expander, Polyhedra, Proof Cloud, etc. (SVG, MP4)
 - **NFT**: Includes all polyhedra releases of NFT image or video resources. (MP4)
 - **SEO**: Includes SEO mapping for all polyhedra projects. (JPG)
 - **Crypto**: Includes blockchain network icons, Token icons, wallet app icons. (SVG)
