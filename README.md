@@ -19,13 +19,9 @@ Suffix: Same path as Github
 
 ### Stopped Update Directories
 - **EXPchain**: Contains EXPchain-specific logos, 3D animations, and other media assets in various formats (SVG, MP4, GIF).「Stop Updating」
-- **Expander**: Contains Expander project assets including 3D animations and vector logos.「Stop Updating」
 - **Illustration**: Contains blog images, web illustrations, and litepaper figures organized by project.「Stop Updating」
 - **Polyhedra**: Contains Polyhedra-related assets including animations and branding materials.「Stop Updating」
-- **Proof Cloud**: Contains assets for Proof Cloud media and branding, including 3D animations and vector logos.「Stop Updating」
-- **zkBridge**: Contains assets for zkBridge protocol branding and demonstrations.「Stop Updating」
 - **Deck**: Contains presentation and deck-related assets.「Stop Updating」
-- **element**: Contains UI and design element assets.「Stop Updating」
 
 ## Asset Guidelines
 ### Supported Formats
