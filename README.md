@@ -15,6 +15,9 @@ Suffix: Same path as Github
 - **Logo**: Includes all Polyhedra Logo resources for all projects. EXPchain, Expander, Polyhedra, Proof Cloud, etc. (SVG, MP4, PNG)
 - **NFT**: Includes all polyhedra releases of NFT image or video resources. (MP4)
 - **SEO**: Includes SEO mapping for all polyhedra projects. (JPG)
+- **Crypto**: Includes blockchain network icons, Token icons, wallet app icons. (SVG)
+
+### Stopped Update Directories
 ### Stopped Updating
 - **EXPchain**: Contains EXPchain-specific logos, 3D animations, and other media assets in various formats (SVG, MP4, GIF).「Stop Updating」
 - **Expander**: Contains Expander project assets including 3D animations and vector logos.「Stop Updating」
