@@ -10,8 +10,8 @@ Suffix: Same path as Github
 
 ## Directory Structure
 - **Font**: Includes font packs for all Polyhedra projects.
-- **Icon**:  Includes all icon resources for the Polyhedra project. Default icons, metal icons, basic icons, social media icons etc. (PNG, SVG, JPG)
-- **Image**: Includes all Image resources for the Polyhedra project. Backers, Partners, Research, Events, and more. (PNG, JPG)
+- **Icon**:  all icon resources for the Polyhedra project, Distinguish by icon type. Default icons, metal icons, basic icons, social media icons etc. (PNG, SVG, JPG, GIF)
+- **Image**: Includes all Image resources for the Polyhedra project, Distinguished by project module or path. Backers, Partners, Research, Events, Developer, Expander, Telegram-Bot and more. (PNG, JPG)
 - **Logo**: Includes all Polyhedra Logo resources for all projects. EXPchain, Expander, Polyhedra, Proof Cloud, etc. (SVG, MP4)
 - **NFT**: Includes all polyhedra releases of NFT image or video resources. (MP4)
 - **SEO**: Includes SEO mapping for all polyhedra projects. (JPG)
