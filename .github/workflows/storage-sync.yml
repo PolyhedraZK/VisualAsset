@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
+      - aws-s3
 
 jobs:
-  gcs-upload:
+  s3-upload:
     runs-on: 'ubuntu-latest'
     
     permissions:
@@ -17,14 +18,15 @@ jobs:
     - id: 'checkout'
       uses: 'actions/checkout@v4'
 
-    - id: 'auth'
-      uses: 'google-github-actions/auth@v2'
+    - 
+      name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4.3.1
       with:
-        credentials_json: '${{ secrets.STORAGESA_GOOGLE_CREDENTIALS }}'
+        audience: sts.amazonaws.com
+        aws-region: us-west-2
+        role-to-assume: ${{ secrets.AWS_ASSUME_ROLE_ARN }}
 
-    - id: 'upload'
-      uses: 'google-github-actions/upload-cloud-storage@v2'
-      with:
-        path: '.'
-        destination: '${{ secrets.GCP_DESTINATION }}'
-        gcloudignore_path: '.gcloudignore'
+    - 
+      name: Sync S3 Bucket
+      run: |
+        aws s3 cp . s3://visual-asset.polyhedra.network --recursive --exclude ".DS_Store" --exclude ".git/*" --exclude ".github/*" --exclude "*.json" --exclude ".gitignore" --exclude "README.md"
